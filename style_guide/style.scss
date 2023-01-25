@@ -1,6 +1,6 @@
 @use "variables" as *; //this puts all the variables in the global namespace.
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-// @use 'atoms';
+@use 'atoms';
 //@use 'molecules';
 //@use 'organisms' as o;
 
@@ -8,9 +8,4 @@
 
 * {
   box-sizing: border-box;
-}
-
-@mixin heading {
-  font-family: 'Inter', helvetica, sans-serif;
-  font-weight: 700;
 }

@@ -1,0 +1,9 @@
+@use 'variables' as *;
+
+
+// TODO: Add atoms, for example: h1, h2, h3
+
+@mixin heading {
+    font-family: 'Inter', helvetica, sans-serif;
+    font-weight: 700;
+  }
