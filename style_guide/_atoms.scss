@@ -7,3 +7,41 @@
     font-family: 'Inter', helvetica, sans-serif;
     font-weight: 700;
   }
+
+h1, h2, h3, h4, p {
+  font-family: 'Inter', helvetica, sans-serif;
+}
+
+.elements h1 {
+  @include heading;
+  color: $black;
+  font-size: 55px;
+  background-color: $blue-green;
+}
+
+h2 {
+  color: $dark-blue;
+  background-color: $tan;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: 400;
+  color: $white;
+  background-color: $dark-blue;
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 18px;
+}
+
+.blue p {
+  color: $dark-blue;
+  background-color: $tan;
+}
