@@ -42,10 +42,46 @@ p {
   box-sizing: border-box;
 }
 
+.colors {
+  margin-bottom: 50px;
+  font-family: Inter, Helvetica, sans-serif;
+}
+.colors div {
+  border: 1px solid #000000;
+  padding: 30px;
+  margin: 0px 20px;
+}
+
+.color1 {
+  background-color: #0081A7;
+}
+
+.color2 {
+  background-color: #00AFB9;
+}
+
+.color3 {
+  background-color: #FFF7EB;
+}
+
+.color4 {
+  background-color: #FED9B7;
+}
+
+.color5 {
+  background-color: #F07167;
+}
+
 .elements div {
   border: solid 1px #000000;
   padding: 15px;
   margin: 10px 20px 10px 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .colors div {
+    max-width: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

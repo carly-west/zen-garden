@@ -10,8 +10,43 @@
   box-sizing: border-box;
 }
 
+
+.colors {
+  margin-bottom: 50px;
+  font-family: Inter, Helvetica, sans-serif;
+div {
+  border: 1px solid $black;
+  padding: 30px;
+  margin: 0px 20px;
+}
+}
+
+.color1 {
+  background-color: $dark-blue;
+}
+.color2 {
+  background-color: $blue-green;
+}
+.color3 {
+  background-color: $tan;
+}
+.color4 {
+  background-color: $peach;
+}
+.color5 {
+  background-color: $coral;
+}
+
+
 .elements div {
   border: solid 1px $black;
   padding: 15px;
   margin: 10px 20px 10px 20px;
+}
+
+
+@media screen and (min-width: 600px){
+  .colors div {
+    max-width: 50%;
+  }
 }
