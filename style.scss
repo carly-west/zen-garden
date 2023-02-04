@@ -60,3 +60,20 @@ p {
     padding-bottom: 30px;
   }
 }
+
+.main_supporting {
+  h3 {
+
+  }
+  p {
+    font-size: $-mobile;
+    position: relative;
+    grid-column: 1/4;
+    background-color: $tan;
+    margin: 0;
+    padding: 10px 30px 10px 30px;
+    color: black;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
