@@ -1,3 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Inter", helvetica, sans-serif;
+}
 
+.preamble h3::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 140px;
+  margin-top: -80px;
+  width: 0;
+  height: 0;
+  border-top: 65px solid transparent;
+  border-bottom: 65px solid transparent;
+  border-right: 110px solid #fff7eb;
+}
+.preamble h3 {
+  font-size: 20px;
+  height: 50px;
+  background-color: #f07167;
+  width: 120px;
+  margin-bottom: -20px;
+  margin-left: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  z-index: 3;
+  text-align: center;
+}
+.preamble p {
+  font-size: 16px;
+  position: relative;
+  grid-column: 1/4;
+  background-color: #00afb9;
+  margin: 0;
+  padding: 10px 30px 10px 30px;
+  color: #ffffff;
+  z-index: -1;
+  margin-right: 15px;
+  margin-left: 15px;
+  z-index: -20;
+}
+.preamble p:first-of-type {
+  padding-top: 30px;
+}
+.preamble p:last-of-type {
+  padding-bottom: 30px;
+}
 
 /*# sourceMappingURL=style.css.map */
