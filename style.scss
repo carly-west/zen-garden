@@ -1,52 +1,58 @@
 @use "variables" as *; //this puts all the variables in the global namespace.
 @use 'atoms';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', Helvetica, sans-serif;
+}
 
 .intro {
+    position: relative;
     background-image: (url(https://lh3.googleusercontent.com/pw/AMWts8CnYXSIggTQ_LnsOa8QWPXWYkfXm0Tj7y9Msjyy3Q3-6L8osilggvC9uT2UaxzfuPkzlJWlyO7UUp-7MeOlq14HnA-u3YCvt_L--I7iOYPbJYgreMfX8DF1zUHu3R5bLh-1OPu94iu6q17MyTEmHOcZNavEJteu9F1GJKNOFRxxA9mVCCsvxdx7jgOxjc3XFP9HlyhOx8F4GsVwDej9iTASak2PF0bWTgEIdao_g1z5sTT3aMRT11-20LnQn_Jl7e9YE8P0YRXztXQC3dWOwSS-qaBDg0mZpJaOMc6IpwjWHp12VNcL0EwoH0MMEQBCFYwNFUQqJvTzNvz6Q07yqwhKugdKIpfm7RaI6yyXNadS8uVKlF2Cc2HkHuD1paBJrvxOkua2RVh1khhuM7VX_2cVh2Fyaq-j4gPnlSWEfd6nrASvaldqkDc1hkQODIVMHjdCqS_HiQqqVDAbo8taloNyEGykEUicJ_fikE1qTMFQ-Vpa7Wrqe_JTmNhltWcFsbNv76qUYD2NOLdqvQffa1cPjel9gAr0IvZRbOncw3Py0nx1DRvnEsjtRUj6LW9O_IveROvuPpsljHdj2OFH2sDkL0nSiW6dcWO9fFIIDud7v_BeZBbV2Jrov00FqgfmIS6wC0N-kizsMglLUNFNwjXzHg9i-aUvzNBQMqPr4XSoPcLGdobty8aaaKi_aKxpC9fLHe58YEM1jkQfEYzjdDPvczFW-CFzz2znvpYLX9P8BB5uUtJlVk-n3a3gaJ8ZumsOu5a4OJTQuU90LjYbEOS4PN6DGrhrjr4fR41-IArYeX9dt6w6e_x387Ci27SMOPgPGR3pwT7m93RLcSbKMUmVpl3yDEWYK5Ih7jVGJUTU8QdSrxVch2O2lYG_loNqb3-zv79_xcZBaLA18i4mDkCvV4itWRqiQl2wqh_lN3SdqjCJMCxMYIVBYWu1OM2uNddy=w331-h220-no?authuser=0));
     background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 100%;
+    background-position: 55% 0%;
+    background-size: 150%;
 
  header {
     position: relative;
-    width: 90%;
+    width: 80%;
+    z-index: 1;
  }
-
  h2 {
+    font-size: $h1-mobile;
     background: $blue-green;
     color: $black;
-    padding: 20px;
+    padding: 20px;   
 }
  h1 {
     background: $peach;
-    padding: 40px;
+    padding: 30px;
     border-radius: 50%;
     text-align: center;
     width: min-content;
-    font-size: 20px;
+    font-size: $h3-mobile;
     position: absolute;
-    margin-left: 350px;
-    margin-top: 310px;
-
+    top: 420px;
+    right: -80px;
  }
 }
 
 .summary {
     background: $coral;
-    width: 25%;
-    height: 500px;
+    width: 40%;
+    height: 440px;
     padding: 15px;
-    float: right;
-    margin-top: -280px;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    font-size: $p-mobile;
 p:nth-of-type(1) {
-        margin-top: 250px;
+        margin-top: 130px;
     }     
-p:nth-of-type(2) {
-    margin-top: 10px;
-}
 }
 
 .preamble {
-    clear: both;
+  margin-top: 500px;
 }
+
 
