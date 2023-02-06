@@ -106,3 +106,33 @@ p:nth-of-type(1) {
     padding-bottom: 30px;
   }
 }
+
+.main_supporting {
+  h3 {
+    font-size: 20px;
+    height: 50px;
+    background-color: $dark-blue;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+    text-align: center;
+  }
+  p {
+    font-size: $-mobile;
+    position: relative;
+    grid-column: 1/4;
+    background-color: $tan;
+    margin: 0;
+    padding: 10px 30px 10px 30px;
+    color: black;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
