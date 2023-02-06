@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Inter", Helvetica, sans-serif;
+}
+
+.intro {
+  position: relative;
+  background-image: url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2946&q=80);
+  background-repeat: no-repeat;
+  background-position: 55% 0%;
+  background-size: 150%;
+}
+
+header {
+  position: relative;
+  width: 80%;
+  z-index: 1;
+}
+header h2 {
+  font-size: 35px;
+  background: #00afb9;
+  color: #000000;
+  padding: 20px;
+}
+header h1 {
+  background: #fed9b7;
+  padding: 30px;
+  border-radius: 50%;
+  text-align: center;
+  width: min-content;
+  font-size: 20px;
+  position: absolute;
+  top: 420px;
+  right: -80px;
+}
+
+.summary {
+  background: #f07167;
+  width: 40%;
+  height: 440px;
+  padding: 15px;
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  font-size: 16px;
+}
+.summary p:nth-of-type(1) {
+  margin-top: 130px;
+}
+
+.preamble {
+  margin-top: 500px;
+}
+
+.preamble h3::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 140px;
+  margin-top: -80px;
+  width: 0;
+  height: 0;
+  border-top: 65px solid transparent;
+  border-bottom: 65px solid transparent;
+  border-right: 110px solid #fff7eb;
+}
+.preamble h3 {
+  font-size: 20px;
+  height: 50px;
+  background-color: #f07167;
+  width: 120px;
+  margin-bottom: -20px;
+  margin-left: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  z-index: 3;
+  text-align: center;
+}
+.preamble p {
+  font-size: 16px;
+  position: relative;
+  grid-column: 1/4;
+  background-color: #00afb9;
+  margin: 0;
+  padding: 10px 30px 10px 30px;
+  color: #ffffff;
+  z-index: -1;
+  margin-right: 15px;
+  margin-left: 15px;
+  z-index: -20;
+}
+.preamble p:first-of-type {
+  padding-top: 30px;
+}
+.preamble p:last-of-type {
+  padding-bottom: 30px;
+}
+
+.explanation h3 {
+  font-size: 20px;
+  height: 50px;
+  background-color: #0081a7;
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 1;
+  text-align: center;
+}
+.explanation p {
+  font-size: 16px;
+  position: relative;
+  grid-column: 1/4;
+  background-color: #fff7eb;
+  margin: 0;
+  padding: 10px 30px 10px 30px;
+  color: black;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
