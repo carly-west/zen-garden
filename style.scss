@@ -12,18 +12,19 @@ body {
     background-repeat: no-repeat;
     background-position: 55% 0%;
     background-size: 150%;
+}
 
  header {
     position: relative;
     width: 80%;
     z-index: 1;
- }
+   
  h2 {
     font-size: $h1-mobile;
     background: $blue-green;
     color: $black;
     padding: 20px;   
-}
+ }
  h1 {
     background: $peach;
     padding: 30px;
@@ -56,3 +57,52 @@ p:nth-of-type(1) {
 }
 
 
+.preamble {
+  h3::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 140px;
+    margin-top: -80px;
+    width: 0;
+    height: 0;
+    border-top: 65px solid transparent;
+    border-bottom: 65px solid transparent;
+    border-right: 110px solid #fff7eb;
+  }
+
+  h3 {
+    font-size: 20px;
+    height: 50px;
+    background-color: #f07167;
+    width: 120px;
+    margin-bottom: -20px;
+    margin-left: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    z-index: 3;
+    text-align: center;
+  }
+
+  p {
+    font-size: $p-mobile;
+    position: relative;
+    grid-column: 1 / 4;
+    background-color: $blue-green;
+    margin: 0;
+    padding: 10px 30px 10px 30px;
+    color: $white;
+    z-index: -1;
+    margin-right: 15px;
+    margin-left: 15px;
+    z-index: -20;
+  }
+  p:first-of-type {
+    padding-top: 30px;
+    // margin-top: -40px;
+  }
+  p:last-of-type {
+    padding-bottom: 30px;
+  }
+}
