@@ -49,7 +49,7 @@ header h1 {
 }
 
 .preamble {
-  margin-top: 500px;
+  margin-top: 450px;
 }
 
 .preamble h3::after {
@@ -123,6 +123,50 @@ header h1 {
   color: black;
   margin-right: 15px;
   margin-left: 15px;
+}
+
+.design-selection, .design-archives, .zen-resources {
+  background: #fed9b7;
+  padding: 10px 25px;
+}
+.design-selection ul, .design-archives ul, .zen-resources ul {
+  padding-left: 20px;
+  margin-top: -15px;
+}
+.design-selection a, .design-archives a, .zen-resources a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.design-selection, .design-archives {
+  margin-bottom: -20px;
+}
+
+.zen-resources {
+  position: relative;
+  padding-bottom: 70px;
+}
+.zen-resources ul::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  bottom: 60px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #0081a7;
+}
+.zen-resources li:nth-of-type(5)::after {
+  content: "";
+  position: absolute;
+  right: 18px;
+  bottom: 27px;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 110px solid #fff7eb;
 }
 
 /*# sourceMappingURL=style.css.map */
