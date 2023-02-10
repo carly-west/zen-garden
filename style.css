@@ -129,8 +129,8 @@ header h1 {
 .explanation p::after {
   content: "";
   position: absolute;
-  left: 15px;
-  bottom: 1px;
+  left: 1px;
+  bottom: -10px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
