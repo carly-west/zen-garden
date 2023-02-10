@@ -124,6 +124,18 @@ header {
     z-index: 1;
     text-align: center;
   }
+
+  p::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 140px;
+    margin-top: -80px;
+    width: 500;
+    height: 50;
+    border-radius: 100%;
+  }
+
   p {
     font-size: $p-mobile;
     position: relative;
