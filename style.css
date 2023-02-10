@@ -122,6 +122,7 @@ header h1 {
   padding-right: 20px;
   z-index: 1;
   text-align: center;
+  color: white;
 }
 .explanation p {
   font-size: 16px;
@@ -130,7 +131,7 @@ header h1 {
   background-color: #fff7eb;
   margin: 0;
   padding: 50px 30px 10px 30px;
-  color: white;
+  color: black;
   margin-right: 15px;
   margin-left: 15px;
 }
