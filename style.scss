@@ -108,16 +108,6 @@ header {
 }
 
 .explanation {
-  h3::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 140px;
-    margin-top: -80px;
-    width: 500;
-    height: 500;
-    border-radius: 50%;
-  }
   h3 {
     font-size: 20px;
     height: 50px;
@@ -147,6 +137,17 @@ header {
     margin-right: 15px;
     margin-left: 15px;
   }
+
+  ul::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    bottom: 60px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: $dark-blue;
+  }  
 }
 
 .design-selection, .design-archives, .zen-resources {
