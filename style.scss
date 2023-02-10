@@ -121,7 +121,7 @@ header {
     padding-bottom: -10px;
     padding-left: 20px;
     padding-right: 20px;
-    z-index: -1;
+    z-index: 2;
     text-align: center;
     color: white;
   }
@@ -132,21 +132,21 @@ header {
     grid-column: 1/4;
     background-color: $tan;
     margin: 0;
-    padding: 50px 30px 10px 30px;
+    padding: 50px 30px 10px 35px;
     color: black;
     margin-right: 15px;
     margin-left: 15px;
   }
 
-  ul::after {
+  p::after {
     content: "";
     position: absolute;
     right: 15px;
     bottom: 60px;
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
-    background: $dark-blue;
+    background: $blue-green;
   }  
 }
 

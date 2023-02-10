@@ -110,7 +110,7 @@ header h1 {
   padding-bottom: -10px;
   padding-left: 20px;
   padding-right: 20px;
-  z-index: -1;
+  z-index: 2;
   text-align: center;
   color: white;
 }
@@ -120,20 +120,20 @@ header h1 {
   grid-column: 1/4;
   background-color: #fff7eb;
   margin: 0;
-  padding: 50px 30px 10px 30px;
+  padding: 50px 30px 10px 35px;
   color: black;
   margin-right: 15px;
   margin-left: 15px;
 }
-.explanation ul::after {
+.explanation p::after {
   content: "";
   position: absolute;
   right: 15px;
   bottom: 60px;
-  width: 150px;
-  height: 150px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
-  background: #0081a7;
+  background: #00afb9;
 }
 
 .design-selection, .design-archives, .zen-resources {
