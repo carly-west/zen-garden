@@ -126,7 +126,7 @@ header h1 {
   margin-left: 15px;
   z-index: -1;
 }
-.explanation .explination p:nth-of-type(2) {
+.explanation p:nth-of-type(2) {
   content: "";
   position: absolute;
   left: 1px;
