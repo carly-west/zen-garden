@@ -128,7 +128,7 @@ header {
 
   p {
     font-size: $p-mobile;
-    position: absolute;
+    position: relative;
     grid-column: 1/4;
     background-color: $tan;
     margin: 0;

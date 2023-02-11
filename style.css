@@ -116,7 +116,7 @@ header h1 {
 }
 .explanation p {
   font-size: 16px;
-  position: absolute;
+  position: relative;
   grid-column: 1/4;
   background-color: #fff7eb;
   margin: 0;
