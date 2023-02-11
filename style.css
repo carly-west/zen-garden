@@ -88,7 +88,6 @@ header h1 {
   z-index: -1;
   margin-right: 15px;
   margin-left: 15px;
-  z-index: -20;
 }
 .preamble p:first-of-type {
   padding-top: 30px;
@@ -125,20 +124,27 @@ header h1 {
   margin-left: 15px;
 }
 
-.design-selection, .design-archives, .zen-resources {
+.design-selection,
+.design-archives,
+.zen-resources {
   background: #fed9b7;
   padding: 10px 25px;
 }
-.design-selection ul, .design-archives ul, .zen-resources ul {
+.design-selection ul,
+.design-archives ul,
+.zen-resources ul {
   padding-left: 20px;
   margin-top: -15px;
 }
-.design-selection a, .design-archives a, .zen-resources a {
+.design-selection a,
+.design-archives a,
+.zen-resources a {
   text-decoration: none;
   color: #000000;
 }
 
-.design-selection, .design-archives {
+.design-selection,
+.design-archives {
   margin-bottom: -20px;
 }
 
@@ -167,6 +173,48 @@ header h1 {
   border-left: 75px solid transparent;
   border-right: 75px solid transparent;
   border-bottom: 110px solid #fff7eb;
+}
+
+.participation p {
+  font-size: 16px;
+  position: relative;
+  background-color: #f07167;
+  margin: -1px;
+  padding: 10px 30px 10px 30px;
+  color: #000000;
+  z-index: -1;
+  margin-right: 5%;
+  margin-left: 15%;
+}
+.participation p:first-of-type {
+  padding-top: 110px;
+  margin-top: 30px;
+}
+.participation p:last-of-type {
+  padding-bottom: 40px;
+}
+.participation h3 {
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  padding: 20px;
+  float: right;
+  background-color: #0081a7;
+  color: #ffffff;
+  text-align: center;
+  width: 50%;
+}
+
+.participation::before {
+  content: "";
+  position: absolute;
+  margin-top: 50px;
+  width: 50%;
+  height: 86%;
+  background-color: #0081a7;
+  padding-left: 100px;
+  margin-left: 20px;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */
