@@ -139,7 +139,7 @@ header {
     z-index: -1;
   }
 
-  :last-of-type::after {
+  p:nth-of-type {
     content: "";
     position: absolute;
     left: 1px;
