@@ -79,7 +79,7 @@ header h1 {
 }
 .preamble p {
   font-size: 16px;
-  position: absolute;
+  position: relative;
   grid-column: 1/4;
   background-color: #00afb9;
   margin: 0;
