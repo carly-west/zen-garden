@@ -1,10 +1,10 @@
 // Imports
 @use "variables" as *; //this puts all the variables in the global namespace.
 @use 'atoms';
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body {
-  font-family: "Inter", Helvetica, sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
 }
 
 .intro {
@@ -59,7 +59,7 @@ header {
 
 .preamble {
   h3::after {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     left: 140px;
@@ -72,7 +72,7 @@ header {
   }
 
   h3 {
-    font-size: 20px;
+    font-size: $h3-mobile;
     height: 50px;
     background-color: #f07167;
     width: 120px;
@@ -96,11 +96,9 @@ header {
     z-index: -1;
     margin-right: 15px;
     margin-left: 15px;
-    z-index: -20;
   }
   p:first-of-type {
     padding-top: 30px;
-    // margin-top: -40px;
   }
   p:last-of-type {
     padding-bottom: 30px;
@@ -156,55 +154,97 @@ header {
 
 }
 
-.design-selection, .design-archives, .zen-resources {
+.design-selection,
+.design-archives,
+.zen-resources {
   background: $peach;
   padding: 10px 25px;
-ul{
-  padding-left: 20px;
-  margin-top: -15px;
+  ul {
+    padding-left: 20px;
+    margin-top: -15px;
   }
-a{
-  text-decoration: none;
-  color: $black;  
+  a {
+    text-decoration: none;
+    color: $black;
+  }
 }
-  }
 
-.design-selection, .design-archives {
+.design-selection,
+.design-archives {
   margin-bottom: -20px;
-} 
+}
 
 .zen-resources {
   position: relative;
   padding-bottom: 70px;
-ul::after {
-  content: "";
-  position: absolute;
-  right: 15px;
-  bottom: 60px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: $dark-blue;
-}  
-li:nth-of-type(5)::after{
-  content:"";
-  position: absolute;
-  right: 18px;
-  bottom: 27px;
-  z-index: 1;
-  width: 0;
-  height: 0;
-  border-left: 75px solid transparent;
-  border-right: 75px solid transparent;
-  border-bottom: 110px solid $tan;
+  ul::after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    bottom: 60px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: $dark-blue;
+  }
+  li:nth-of-type(5)::after {
+    content: '';
+    position: absolute;
+    right: 18px;
+    bottom: 27px;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 110px solid $tan;
+  }
 }
+
+// Participation
+
+.participation {
+  p {
+    font-size: $p-mobile;
+    position: relative;
+    background-color: $coral;
+    margin: -1px;
+    padding: 10px 30px 10px 30px;
+    color: $black;
+    z-index: -1;
+    margin-right: 5%;
+    margin-left: 15%;
+  }
+
+  p:first-of-type {
+    padding-top: 110px;
+    margin-top: 30px;
+  }
+
+  p:last-of-type {
+    padding-bottom: 40px;
+  }
+
+  h3 {
+    position: absolute;
+    right: 0;
+    font-size: $h3-mobile;
+    padding: 20px;
+    float: right;
+    background-color: $dark-blue;
+    color: $white;
+    text-align: center;
+    width: 50%;
+  }
 }
-
-
-
-
-
-
-
-
-
+.participation::before {
+  content: '';
+  position: absolute;
+  margin-top: 50px;
+  width: 50%;
+  height: 86%;
+  background-color: $dark-blue;
+  padding-left: 100px;
+  margin-left: 20px;
+  z-index: -1;
+}
