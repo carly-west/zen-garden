@@ -232,4 +232,37 @@ header h1 {
   z-index: -1;
 }
 
+.requirements h3 {
+  font-size: 20px;
+  height: 50px;
+  background-color: #f07167;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: -80px;
+  margin-left: -20px;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: -10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 2;
+  text-align: center;
+  color: black;
+}
+.requirements p {
+  font-size: 16px;
+  position: relative;
+  grid-column: 1/4;
+  background-color: #00afb9;
+  margin: 0;
+  padding: 30px 10px 10px 30px;
+  color: black;
+  margin-right: 15px;
+  margin-left: 15px;
+  z-index: -1;
+}
+.requirements p:nth-of-type(1) {
+  padding-top: 100px;
+}
+
 /*# sourceMappingURL=style.css.map */
