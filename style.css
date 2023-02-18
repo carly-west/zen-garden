@@ -225,7 +225,7 @@ header h1 {
   position: absolute;
   margin-top: 50px;
   width: 50%;
-  height: 780px;
+  height: 100%;
   background-color: #0081a7;
   padding-left: 100px;
   margin-left: 20px;
@@ -263,6 +263,25 @@ header h1 {
 }
 .requirements p:nth-of-type(1) {
   padding-top: 100px;
+}
+
+.benefits {
+  background-color: #fff7eb;
+  color: #00afb9;
+  border-radius: 50%;
+  padding: 30px;
+  height: 280px;
+  width: 280px;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  line-height: 20px;
+}
+.benefits p {
+  text-align: center;
+}
+.benefits h3 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
