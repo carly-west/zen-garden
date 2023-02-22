@@ -54,20 +54,20 @@ header {
 }
 
 .preamble {
-  margin-top: 450px;  
+  margin-top: 450px;
 }
 
-.preamble::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  z-index: -2;
-  width: 800px;
-  height: 200px;
-  border-top: 20px solid $coral;
-  border-bottom: 20px solid $coral;
-  transform: skew(-55deg, -55deg);
-}
+// .preamble::after {
+//   content: '';
+//   position: absolute;
+//   bottom: 0;
+//   z-index: -2;
+//   width: 800px;
+//   height: 200px;
+//   border-top: 20px solid $coral;
+//   border-bottom: 20px solid $coral;
+//   transform: skew(-55deg, -55deg);
+// }
 
 .preamble {
   h3::after {
@@ -215,6 +215,9 @@ header {
 // Participation
 
 .participation {
+  // display: flex;
+  // flex-direction: column;
+  // flex: 1 1 auto;
   p {
     font-size: $p-mobile;
     position: relative;
@@ -222,18 +225,25 @@ header {
     margin: -1px;
     padding: 10px 30px 10px 30px;
     color: $black;
-    z-index: -1;
-    margin-right: 5%;
-    margin-left: 15%;
+    z-index: -2;
+    margin-right: 10px;
+    margin-left: 55px;
+    width: 60%;
   }
 
   p:first-of-type {
     padding-top: 110px;
     margin-top: 30px;
+    height: 250px;
+  }
+
+  p:nth-of-type(2) {
+    height: 150px;
   }
 
   p:last-of-type {
     padding-bottom: 40px;
+    height: 250px;
   }
 
   h3 {
@@ -253,11 +263,11 @@ header {
   position: absolute;
   margin-top: 50px;
   width: 50%;
-  height: 100%;
+  height: 830px;
   background-color: $dark-blue;
   padding-left: 100px;
   margin-left: 20px;
-  z-index: -1;
+  z-index: -3;
 }
 
 .requirements {
@@ -298,15 +308,15 @@ header {
   }
 }
 
-.requirements::before {
-  content: '';
-  position: absolute;
-  z-index: -2;
-  width: 800px;
-  height: 200px;
-  background: $peach;
-  transform: skew(55deg, 55deg);
-}
+// .requirements::before {
+//   content: '';
+//   position: absolute;
+//   z-index: -2;
+//   width: 800px;
+//   height: 200px;
+//   background: $peach;
+//   transform: skew(55deg, 55deg);
+// }
 
 // Benefits
 
