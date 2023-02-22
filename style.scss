@@ -57,17 +57,17 @@ header {
   margin-top: 450px;
 }
 
-// .preamble::after {
-//   content: '';
-//   position: absolute;
-//   bottom: 0;
-//   z-index: -2;
-//   width: 800px;
-//   height: 200px;
-//   border-top: 20px solid $coral;
-//   border-bottom: 20px solid $coral;
-//   transform: skew(-55deg, -55deg);
-// }
+.preamble::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  z-index: -2;
+  width: 800px;
+  height: 200px;
+  border-top: 20px solid $coral;
+  border-bottom: 20px solid $coral;
+  transform: skew(-55deg, -55deg);
+}
 
 .preamble {
   h3::after {
@@ -308,15 +308,15 @@ header {
   }
 }
 
-// .requirements::before {
-//   content: '';
-//   position: absolute;
-//   z-index: -2;
-//   width: 800px;
-//   height: 200px;
-//   background: $peach;
-//   transform: skew(55deg, 55deg);
-// }
+.requirements::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  width: 800px;
+  height: 200px;
+  background: $peach;
+  transform: skew(55deg, 55deg);
+}
 
 // Benefits
 
