@@ -98,8 +98,7 @@ header h1 {
   padding: 10px 30px 10px 30px;
   color: #ffffff;
   z-index: -1;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin: -1px 15px 0 15px;
 }
 .preamble p:first-of-type {
   padding-top: 30px;
@@ -258,14 +257,8 @@ header h1 {
   height: 50px;
   background-color: #f07167;
   width: 200px;
-  margin-top: 20px;
-  margin-bottom: -80px;
-  margin-left: -20px;
-  margin-right: auto;
-  padding-top: 10px;
-  padding-bottom: -10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 20px auto -80px -20px;
+  padding: 10px 20px -10px 20px;
   z-index: 2;
   text-align: center;
   color: black;
@@ -303,9 +296,7 @@ header h1 {
   padding: 30px;
   height: 280px;
   width: 280px;
-  margin-top: 100px;
-  margin-left: 50px;
-  margin-bottom: 40px;
+  margin: 10px 0 40px 50px;
   line-height: 20px;
 }
 .benefits p {
@@ -313,6 +304,75 @@ header h1 {
 }
 .benefits h3 {
   text-align: center;
+  font-size: 30px;
+}
+
+/* 
+
+MEDIUM MEDIA QUERY
+
+*/
+@media only screen and (min-width: 700px) {
+  .preamble {
+    max-width: 97%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .participation p {
+    width: 75%;
+    margin-left: 100px;
+    padding: 0px 30px 5px 30px;
+    height: 30px;
+  }
+  .participation p:first-of-type {
+    height: 120px;
+  }
+  .participation p:nth-of-type(2) {
+    height: 120px;
+  }
+  .participation p:last-of-type {
+    padding-bottom: 40px;
+    height: 100px;
+  }
+  .participation::before {
+    margin-left: 30px;
+    width: 70%;
+    height: 500px;
+  }
+  .benefits {
+    background-color: #fff7eb;
+    color: #00afb9;
+    border-radius: 50%;
+    padding: 10px;
+    height: 480px;
+    width: 480px;
+    margin: 80px 0 40px 190px;
+  }
+  .benefits p {
+    padding-top: 40px;
+    width: 400px;
+    line-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .benefits h3 {
+    padding-top: 40px;
+    margin-bottom: 10px;
+  }
+  .requirements {
+    position: relative;
+  }
+  .requirements h3 {
+    padding-top: 30px;
+    margin-bottom: -110px;
+  }
+  .requirements p:nth-of-type(1) {
+    padding-top: 160px;
+  }
+  .requirements p {
+    margin-right: 135px;
+    margin-left: 55px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
