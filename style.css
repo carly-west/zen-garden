@@ -52,6 +52,18 @@ header h1 {
   margin-top: 450px;
 }
 
+.preamble::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  z-index: -2;
+  width: 800px;
+  height: 200px;
+  border-top: 20px solid #f07167;
+  border-bottom: 20px solid #f07167;
+  transform: skew(-55deg, -55deg);
+}
+
 .preamble h3::after {
   content: "";
   position: absolute;
@@ -272,6 +284,16 @@ header h1 {
 }
 .requirements p:nth-of-type(1) {
   padding-top: 100px;
+}
+
+.requirements::before {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  width: 800px;
+  height: 200px;
+  background: #fed9b7;
+  transform: skew(55deg, 55deg);
 }
 
 .benefits {
