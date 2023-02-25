@@ -296,6 +296,24 @@ header h1 {
   transform: skew(55deg, 55deg);
 }
 
+footer {
+  font-size: 13px;
+  height: 20px;
+  background-color: #fff7eb;
+  width: 150px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 220px;
+  margin-right: 5px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  z-index: -1;
+  text-align: center;
+  color: black;
+}
+
 .benefits {
   background-color: #fff7eb;
   color: #00afb9;
