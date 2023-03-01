@@ -274,8 +274,8 @@ header {
     height: 50px;
     background-color: $coral;
     width: 200px;
-    margin: 20px auto -80px -20px;
-    padding: 10px 20px -10px 20px;
+    margin: 20px auto -100px -20px;
+    padding: 30px 20px 0px 20px;
     z-index: 2;
     text-align: center;
     color: black;
@@ -286,8 +286,8 @@ header {
     position: relative;
     grid-column: 1/4;
     background-color: $blue-green;
-    margin: 0;
-    padding: 30px 10px 10px 30px;
+    margin: -5px;
+    padding: 10px 30px 10px 30px;
     color: black;
     margin-right: 15px;
     margin-left: 15px;
@@ -295,7 +295,11 @@ header {
   }
 
   p:nth-of-type(1) {
-    padding-top: 100px;
+    padding-top: 120px;
+  }
+
+  p:last-of-type {
+    padding-bottom: 50px;
   }
 }
 
@@ -329,18 +333,18 @@ footer {
   color: black;
 }
 
-
 // Benefits
 
 .benefits {
   background-color: $tan;
   color: $blue-green;
   border-radius: 50%;
-  padding: 30px;
+  padding: 40px;
   height: 280px;
   width: 280px;
-  margin: 10px 0 40px 50px;
+  margin: 90px 0 40px 90px;
   line-height: 20px;
+  font-size: $p-mobile;
 
   p {
     text-align: center;
@@ -431,6 +435,10 @@ MEDIUM MEDIA QUERY
       margin-right: 135px;
       margin-left: 55px;
     }
+
+    p:nth-of-type(1) {
+      padding-top: 135px;
+    }
   }
 
   .explanation {
@@ -451,7 +459,7 @@ MEDIUM MEDIA QUERY
       text-align: center;
       color: white;
     }
-  
+
     p {
       font-size: $p-mobile;
       position: relative;
@@ -464,7 +472,7 @@ MEDIUM MEDIA QUERY
       margin-left: 15px;
       z-index: -1;
     }
-  
+
     p:nth-of-type(2)::after {
       content: '';
       position: absolute;
@@ -475,90 +483,94 @@ MEDIUM MEDIA QUERY
       border-radius: 50%;
       background: $blue-green;
     }
-  
+
     p:nth-of-type(2) {
       padding-bottom: 45px;
     }
   }
-}
 
-.intro {
-  background-size: 120%;
-  max-width: 100%;
-}
+  .intro {
+    background-size: 120%;
+    max-width: 100%;
+  }
 
-header {
-  width: 85vw;
-  margin: 0 auto;
-h1 {
-  padding: 40px;
-  right: -30px;
-  top: 400px;
-  font-size: 1.7rem;
-}
-h2 {
-  position: relative;
-  padding-left: 50px;
-  margin-top: 40px;
-  font-size: 2.4rem;
-}
-}
+  header {
+    width: 85vw;
+    margin: 0 auto;
+    h1 {
+      padding: 40px;
+      right: -30px;
+      top: 400px;
+      font-size: 1.7rem;
+    }
+    h2 {
+      position: relative;
+      padding-left: 50px;
+      margin-top: 40px;
+      font-size: 2.4rem;
+    }
+  }
 
-.summary {
-  height: 480px;;
-  right: 50px;
-  width: 30%;
-  font-size: 1.3rem;
-  p:nth-of-type(1) {
-    margin-top: 90px;
-  }  
-}
+  .summary {
+    height: 480px;
+    right: 50px;
+    width: 30%;
+    font-size: 1.3rem;
+    p:nth-of-type(1) {
+      margin-top: 90px;
+    }
+  }
 
-.sidebar {
-  position: absolute;
-  top: 800px;
-  right: 10px;
-  width: 35%;
-  margin: 0 auto;
-.design-selection::before {
-  content: '';
+  .sidebar {
     position: absolute;
-    right: 25px;
-    top: -150px;
-    width: 125px;
-    height: 125px;
-    border-radius: 50%;
-    background: $dark-blue;
-}
-.design-selection li:nth-of-type(1)::before {
-  content: '';
-    position: absolute;
-    right: 35px;
-    top: -100px;
-    z-index: 1;
-    width: 0;
-    height: 0;
-    border-left: 55px solid transparent;
-    border-right: 55px solid transparent;
-    border-bottom: 90px solid $tan;
-}
+    top: 800px;
+    right: 10px;
+    width: 35%;
+    margin: 0 auto;
+    .design-selection::before {
+      content: '';
+      position: absolute;
+      right: 25px;
+      top: -150px;
+      width: 125px;
+      height: 125px;
+      border-radius: 50%;
+      background: $dark-blue;
+    }
+    .design-selection li:nth-of-type(1)::before {
+      content: '';
+      position: absolute;
+      right: 35px;
+      top: -100px;
+      z-index: 1;
+      width: 0;
+      height: 0;
+      border-left: 55px solid transparent;
+      border-right: 55px solid transparent;
+      border-bottom: 90px solid $tan;
+    }
+  }
+
+  .design-selection,
+  .design-archives,
+  .zen-resources {
+    font-size: 1rem;
+
+    h3 {
+      margin-top: 15px;
+    }
+  }
+
+  .zen-resources {
+    padding-bottom: 15px;
+    li:nth-of-type(5)::after {
+      display: none;
+    }
+    ul::after {
+      display: none;
+    }
+  }
 }
 
-.design-selection, .design-archives, .zen-resources {
-  font-size: 1rem;
-
-h3 {
-  margin-top: 15px;
-}  
-}  
-
-.zen-resources {
-  padding-bottom: 15px;
-li:nth-of-type(5)::after{
-  display: none;
+@media only screen and (min-width: 1000px) {
 }
-ul::after{
-  display: none;
-}
-} 
-
