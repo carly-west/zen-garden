@@ -282,8 +282,9 @@ header h1 {
 .requirements::before {
   content: "";
   position: absolute;
+  left: -150px;
   z-index: -2;
-  width: 800px;
+  width: 1000px;
   height: 200px;
   background: #fed9b7;
   transform: skew(55deg, 55deg);
@@ -373,6 +374,84 @@ MEDIUM MEDIA QUERY
     margin-right: 135px;
     margin-left: 55px;
   }
+}
+.intro {
+  background-size: 120%;
+  max-width: 100%;
+}
+
+header {
+  width: 85vw;
+  margin: 0 auto;
+}
+header h1 {
+  padding: 40px;
+  right: -30px;
+  top: 400px;
+  font-size: 1.7rem;
+}
+header h2 {
+  position: relative;
+  padding-left: 50px;
+  margin-top: 40px;
+  font-size: 2.4rem;
+}
+
+.summary {
+  height: 480px;
+  right: 50px;
+  width: 30%;
+  font-size: 1.3rem;
+}
+.summary p:nth-of-type(1) {
+  margin-top: 90px;
+}
+
+.sidebar {
+  position: absolute;
+  top: 800px;
+  right: 10px;
+  width: 35%;
+  margin: 0 auto;
+}
+.sidebar .design-selection::before {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: -150px;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: #0081a7;
+}
+.sidebar .design-selection li:nth-of-type(1)::before {
+  content: "";
+  position: absolute;
+  right: 35px;
+  top: -100px;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  border-bottom: 90px solid #fff7eb;
+}
+
+.design-selection, .design-archives, .zen-resources {
+  font-size: 1rem;
+}
+.design-selection h3, .design-archives h3, .zen-resources h3 {
+  margin-top: 15px;
+}
+
+.zen-resources {
+  padding-bottom: 15px;
+}
+.zen-resources li:nth-of-type(5)::after {
+  display: none;
+}
+.zen-resources ul::after {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
