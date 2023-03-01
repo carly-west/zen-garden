@@ -57,6 +57,7 @@ header {
   margin-top: 450px;
 }
 
+// Background Line
 .preamble::after {
   content: '';
   position: absolute;
@@ -106,8 +107,7 @@ header {
     padding: 10px 30px 10px 30px;
     color: $white;
     z-index: -1;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin: -1px 15px 0 15px;
   }
   p:first-of-type {
     padding-top: 30px;
@@ -215,9 +215,6 @@ header {
 // Participation
 
 .participation {
-  // display: flex;
-  // flex-direction: column;
-  // flex: 1 1 auto;
   p {
     font-size: $p-mobile;
     position: relative;
@@ -277,14 +274,8 @@ header {
     height: 50px;
     background-color: $coral;
     width: 200px;
-    margin-top: 20px;
-    margin-bottom: -80px;
-    margin-left: -20px;
-    margin-right: auto;
-    padding-top: 10px;
-    padding-bottom: -10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 20px auto -80px -20px;
+    padding: 10px 20px -10px 20px;
     z-index: 2;
     text-align: center;
     color: black;
@@ -308,11 +299,13 @@ header {
   }
 }
 
+// Background Line
 .requirements::before {
   content: '';
   position: absolute;
+  left: -150px;
   z-index: -2;
-  width: 800px;
+  width: 1000px;
   height: 200px;
   background: $peach;
   transform: skew(55deg, 55deg);
@@ -346,9 +339,7 @@ footer {
   padding: 30px;
   height: 280px;
   width: 280px;
-  margin-top: 100px;
-  margin-left: 50px;
-  margin-bottom: 40px;
+  margin: 10px 0 40px 50px;
   line-height: 20px;
 
   p {
@@ -357,5 +348,169 @@ footer {
 
   h3 {
     text-align: center;
+    font-size: $h2-mobile;
   }
 }
+
+/* 
+
+MEDIUM MEDIA QUERY
+
+*/
+
+@media only screen and (min-width: 700px) {
+  // Preamble - Enlightenment
+  .preamble {
+    max-width: 97%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  // Participation
+  .participation {
+    p {
+      width: 75%;
+      margin-left: 100px;
+      padding: 0px 30px 5px 30px;
+      height: 30px;
+    }
+
+    p:first-of-type {
+      height: 120px;
+    }
+
+    p:nth-of-type(2) {
+      height: 120px;
+    }
+
+    p:last-of-type {
+      padding-bottom: 40px;
+      height: 100px;
+    }
+  }
+  .participation::before {
+    margin-left: 30px;
+    width: 70%;
+    height: 500px;
+  }
+
+  .benefits {
+    background-color: $tan;
+    color: $blue-green;
+    border-radius: 50%;
+    padding: 10px;
+    height: 480px;
+    width: 480px;
+    margin: 80px 0 40px 190px;
+    p {
+      padding-top: 40px;
+      width: 400px;
+      line-height: 40px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h3 {
+      padding-top: 40px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .requirements {
+    position: relative;
+    h3 {
+      padding-top: 30px;
+      margin-bottom: -110px;
+    }
+
+    p:nth-of-type(1) {
+      padding-top: 160px;
+    }
+
+    p {
+      margin-right: 135px;
+      margin-left: 55px;
+    }
+  }
+}
+
+.intro {
+  background-size: 120%;
+  max-width: 100%;
+}
+
+header {
+  width: 85vw;
+  margin: 0 auto;
+h1 {
+  padding: 40px;
+  right: -30px;
+  top: 400px;
+  font-size: 1.7rem;
+}
+h2 {
+  position: relative;
+  padding-left: 50px;
+  margin-top: 40px;
+  font-size: 2.4rem;
+}
+}
+
+.summary {
+  height: 480px;;
+  right: 50px;
+  width: 30%;
+  font-size: 1.3rem;
+  p:nth-of-type(1) {
+    margin-top: 90px;
+  }  
+}
+
+.sidebar {
+  position: absolute;
+  top: 800px;
+  right: 10px;
+  width: 35%;
+  margin: 0 auto;
+.design-selection::before {
+  content: '';
+    position: absolute;
+    right: 25px;
+    top: -150px;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: $dark-blue;
+}
+.design-selection li:nth-of-type(1)::before {
+  content: '';
+    position: absolute;
+    right: 35px;
+    top: -100px;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+    border-bottom: 90px solid $tan;
+}
+}
+
+.design-selection, .design-archives, .zen-resources {
+  font-size: 1rem;
+
+h3 {
+  margin-top: 15px;
+}  
+}  
+
+.zen-resources {
+  padding-bottom: 15px;
+li:nth-of-type(5)::after{
+  display: none;
+}
+ul::after{
+  display: none;
+}
+} 
+
