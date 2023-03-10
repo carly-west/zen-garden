@@ -58,17 +58,17 @@ header {
 }
 
 // Background Line
-.preamble::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  z-index: -2;
-  width: 800px;
-  height: 200px;
-  border-top: 20px solid $coral;
-  border-bottom: 20px solid $coral;
-  transform: skew(-55deg, -55deg);
-}
+// .preamble::after {
+//   content: '';
+//   position: absolute;
+//   bottom: 0;
+//   z-index: -2;
+//   width: 800px;
+//   height: 200px;
+//   border-top: 20px solid $coral;
+//   border-bottom: 20px solid $coral;
+//   transform: skew(-55deg, -55deg);
+// }
 
 .preamble {
   h3::after {
@@ -304,16 +304,16 @@ header {
 }
 
 // Background Line
-.requirements::before {
-  content: '';
-  position: absolute;
-  left: -150px;
-  z-index: -2;
-  width: 1000px;
-  height: 200px;
-  background: $peach;
-  transform: skew(55deg, 55deg);
-}
+// .requirements::before {
+//   content: '';
+//   position: absolute;
+//   left: -150px;
+//   z-index: -2;
+//   width: 1000px;
+//   height: 200px;
+//   background: $peach;
+//   transform: skew(55deg, 55deg);
+// }
 
 footer {
   font-size: 13px;
@@ -578,4 +578,27 @@ LARGE MEDIA QUERY
 
 */
 @media only screen and (min-width: 1000px) {
+  // Participation
+  .participation {
+    margin-left: 200px;
+    margin-top: 100px;
+
+    h3 {
+      width: 30%;
+    }
+  }
+  .participation::before {
+    width: 55%;
+  }
+  // Circle before participation
+  .explanation {
+    p:nth-of-type(2)::after {
+      display: none;
+    }
+  }
+
+  // Benefits
+  .benefits {
+    margin-left: 45%;
+  }
 }
