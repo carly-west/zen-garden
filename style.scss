@@ -442,6 +442,25 @@ MEDIUM MEDIA QUERY
     }
   }
 
+  footer {
+    position: relative;
+    font-size: 13px;
+    height: 20px;
+    background-color: $tan;
+    width: 150px;
+    margin-top: 0px;
+    margin-bottom: -5px;
+    margin-left: 300px;
+    margin-right: 5px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    z-index: 1;
+    text-align: center;
+    color: black;
+  }
+
   .explanation {
     h3 {
       font-size: 20px;
