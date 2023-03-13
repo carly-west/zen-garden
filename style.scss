@@ -621,44 +621,46 @@ LARGE MEDIA QUERY
   .benefits {
     margin-left: 45%;
   }
+
+  .requirements {
+    position: relative;
+    h3 {
+      padding-top: 30px;
+      margin-bottom: -110px;
+    }
+  
+    p:nth-of-type(1) {
+      padding-top: 160px;
+    }
+  
+    p {
+      margin-right: 135px;
+      margin-left: 55px;
+    }
+  
+    p:nth-of-type(1) {
+      padding-top: 135px;
+    }
+  }
+  
+  footer {
+    position: relative;
+    font-size: 13px;
+    height: 20px;
+    background-color: $tan;
+    width: 150px;
+    margin-top: 0px;
+    margin-bottom: -5px;
+    margin-left:700px;
+    margin-right: 5px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    z-index: 1;
+    text-align: center;
+    color: black;
+  }
 }
 
-.requirements {
-  position: relative;
-  h3 {
-    padding-top: 30px;
-    margin-bottom: -110px;
-  }
 
-  p:nth-of-type(1) {
-    padding-top: 160px;
-  }
-
-  p {
-    margin-right: 135px;
-    margin-left: 55px;
-  }
-
-  p:nth-of-type(1) {
-    padding-top: 135px;
-  }
-}
-
-footer {
-  position: relative;
-  font-size: 13px;
-  height: 20px;
-  background-color: $tan;
-  width: 150px;
-  margin-top: 0px;
-  margin-bottom: -5px;
-  margin-left:700px;
-  margin-right: 5px;
-  padding-top: 7px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  z-index: 1;
-  text-align: center;
-  color: black;
-}
