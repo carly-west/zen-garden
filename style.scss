@@ -15,13 +15,32 @@ body {
   background-size: 150%;
 }
 
+a {
+  color: $black;
+}
+
+p, li{
+  font-size: $p-mobile;
+}
+
+h1 {
+  font-size: $h1-mobile;
+}
+
+h2 {
+  font-size: $h2-mobile;
+}
+
+h3 {
+  font-size: $h3-mobile;
+}
+
 header {
   position: relative;
   width: 80%;
   z-index: 1;
 
   h2 {
-    font-size: $h1-mobile;
     background: $blue-green;
     color: $black;
     padding: 20px;
@@ -32,7 +51,6 @@ header {
     border-radius: 50%;
     text-align: center;
     width: min-content;
-    font-size: $h3-mobile;
     position: absolute;
     top: 420px;
     right: -80px;
@@ -47,7 +65,6 @@ header {
   position: absolute;
   right: 15px;
   top: 0px;
-  font-size: $p-mobile;
   p:nth-of-type(1) {
     margin-top: 130px;
   }
@@ -58,18 +75,18 @@ header {
 }
 
 // Background Line
-// .preamble::after {
-//   content: '';
-//   position: absolute;
-//   bottom: 0;
-//   z-index: -2;
-//   width: 800px;
-//   height: 200px;
-//   border-top: 20px solid $coral;
-//   border-bottom: 20px solid $coral;
-//   transform: skew(-55deg, -55deg);
-//   overflow: hidden;
-// }
+.preamble::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  z-index: -2;
+  width: 800px;
+  height: 200px;
+  border-top: 20px solid $coral;
+  border-bottom: 20px solid $coral;
+  transform: skew(-55deg, -55deg);
+  overflow: hidden;
+}
 
 .preamble {
   h3::after {
@@ -86,7 +103,6 @@ header {
   }
 
   h3 {
-    font-size: $h3-mobile;
     height: 50px;
     background-color: #f07167;
     width: 120px;
@@ -100,7 +116,6 @@ header {
   }
 
   p {
-    font-size: $p-mobile;
     position: relative;
     grid-column: 1 / 4;
     background-color: $blue-green;
@@ -120,7 +135,6 @@ header {
 
 .explanation {
   h3 {
-    font-size: 20px;
     height: 50px;
     background-color: $dark-blue;
     width: 200px;
@@ -138,7 +152,6 @@ header {
   }
 
   p {
-    font-size: $p-mobile;
     position: relative;
     grid-column: 1/4;
     background-color: $tan;
@@ -223,7 +236,6 @@ header {
 
 .participation {
   p {
-    font-size: $p-mobile;
     position: relative;
     background-color: $coral;
     margin: -1px;
@@ -253,7 +265,6 @@ header {
   h3 {
     position: absolute;
     right: 0;
-    font-size: $h3-mobile;
     padding: 20px;
     float: right;
     background-color: $dark-blue;
@@ -277,7 +288,6 @@ header {
 .requirements {
   position: relative;
   h3 {
-    font-size: 20px;
     height: 50px;
     background-color: $coral;
     width: 200px;
@@ -289,7 +299,6 @@ header {
   }
 
   p {
-    font-size: $p-mobile;
     position: relative;
     grid-column: 1/4;
     background-color: $blue-green;
@@ -311,21 +320,20 @@ header {
 }
 
 // Background Line
-// .requirements::before {
-//   content: '';
-//   position: absolute;
-//   left: -150px;
-//   z-index: -2;
-//   width: 1000px;
-//   height: 200px;
-//   background: $peach;
-//   transform: skew(55deg, 55deg);
-//   overflow: hidden;
-// }
+.requirements::before {
+  content: '';
+  position: absolute;
+  left: -150px;
+  z-index: -2;
+  width: 1000px;
+  height: 200px;
+  background: $peach;
+  transform: skew(55deg, 55deg);
+  overflow: hidden;
+}
 
 footer {
   position: relative;
-  font-size: 13px;
   height: 20px;
   background-color: $tan;
   width: 150px;
@@ -353,7 +361,6 @@ footer {
   width: 280px;
   margin: 90px 0 40px 90px;
   line-height: 20px;
-  font-size: $p-mobile;
 
   p {
     text-align: center;
@@ -361,7 +368,6 @@ footer {
 
   h3 {
     text-align: center;
-    font-size: $h2-mobile;
   }
 }
 
@@ -372,6 +378,9 @@ MEDIUM MEDIA QUERY
 */
 
 @media only screen and (min-width: 700px) {
+
+
+
   // Preamble - Enlightenment
   .preamble {
     max-width: 97%;
@@ -418,7 +427,7 @@ MEDIUM MEDIA QUERY
     p {
       padding-top: 40px;
       width: 400px;
-      line-height: 40px;
+      line-height: 30px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -448,11 +457,12 @@ MEDIUM MEDIA QUERY
     p:nth-of-type(1) {
       padding-top: 135px;
     }
+
+
   }
 
   footer {
     position: relative;
-    font-size: 13px;
     height: 20px;
     background-color: $tan;
     width: 150px;
@@ -471,7 +481,7 @@ MEDIUM MEDIA QUERY
 
   .explanation {
     h3 {
-      font-size: 20px;
+      font-size: $h3-medium;
       height: 35px;
       background-color: $dark-blue;
       width: 250px;
@@ -489,7 +499,6 @@ MEDIUM MEDIA QUERY
     }
 
     p {
-      font-size: $p-mobile;
       position: relative;
       grid-column: 1/4;
       background-color: $tan;
@@ -562,6 +571,22 @@ MEDIUM MEDIA QUERY
     border-right: 75px solid transparent;
     border-bottom: 150px solid $tan;
   }
+  }
+
+  p, li{
+    font-size: $p-medium;
+  }
+  
+  h1 {
+    font-size: $h1-medium;
+  }
+  
+  h2 {
+    font-size: $h2-medium;
+  }
+  
+  h3 {
+    font-size: $h3-medium;
   }
 }
   
@@ -714,7 +739,7 @@ LARGE MEDIA QUERY
   
   footer {
     position: relative;
-    font-size: 13px;
+    font-size: $h3-large;
     height: 20px;
     background-color: $tan;
     width: 150px;
