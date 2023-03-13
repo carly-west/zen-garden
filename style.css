@@ -143,6 +143,8 @@ header h1 {
 .zen-resources {
   background: #fed9b7;
   padding: 10px 25px;
+  width: 80%;
+  margin-left: 3vw;
 }
 .design-selection ul,
 .design-archives ul,
@@ -162,6 +164,10 @@ header h1 {
   margin-bottom: -20px;
 }
 
+.design-selection {
+  padding-top: 40px;
+}
+
 .zen-resources {
   position: relative;
   padding-bottom: 70px;
@@ -171,22 +177,22 @@ header h1 {
   position: absolute;
   right: 15px;
   bottom: 60px;
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   background: #0081a7;
 }
 .zen-resources li:nth-of-type(5)::after {
   content: "";
   position: absolute;
-  right: 18px;
-  bottom: 27px;
+  right: 30px;
+  bottom: 25px;
   z-index: 1;
   width: 0;
   height: 0;
-  border-left: 75px solid transparent;
-  border-right: 75px solid transparent;
-  border-bottom: 110px solid #fff7eb;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #fff7eb;
 }
 
 .participation p {
@@ -447,18 +453,53 @@ MEDIUM MEDIA QUERY
   .summary p:nth-of-type(1) {
     margin-top: 90px;
   }
+  .zen-resources ul::after {
+    right: 50px;
+    bottom: 75px;
+    width: 175px;
+    height: 175px;
+  }
+  .zen-resources li:nth-of-type(5)::after {
+    right: 62px;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 150px solid #fff7eb;
+  }
+}
+/* 
+
+LARGE MEDIA QUERY
+
+*/
+@media only screen and (min-width: 1000px) {
+  .participation {
+    margin-left: 200px;
+    margin-top: 100px;
+  }
+  .participation h3 {
+    width: 30%;
+  }
+  .participation::before {
+    width: 55%;
+  }
+  .explanation p:nth-of-type(2)::after {
+    display: none;
+  }
+  .benefits {
+    margin-left: 45%;
+  }
   .sidebar {
     position: absolute;
-    top: 800px;
-    right: 10px;
+    top: 1000px;
+    right: 40px;
     width: 35%;
     margin: 0 auto;
   }
   .sidebar .design-selection::before {
     content: "";
     position: absolute;
-    right: 25px;
-    top: -150px;
+    right: 90px;
+    top: -180px;
     width: 125px;
     height: 125px;
     border-radius: 50%;
@@ -467,8 +508,8 @@ MEDIUM MEDIA QUERY
   .sidebar .design-selection li:nth-of-type(1)::before {
     content: "";
     position: absolute;
-    right: 35px;
-    top: -100px;
+    right: 100px;
+    top: -120px;
     z-index: 1;
     width: 0;
     height: 0;
@@ -495,28 +536,39 @@ MEDIUM MEDIA QUERY
   .zen-resources ul::after {
     display: none;
   }
-}
-/* 
-
-LARGE MEDIA QUERY
-
-*/
-@media only screen and (min-width: 1000px) {
-  .participation {
-    margin-left: 200px;
-    margin-top: 100px;
+  .intro {
+    background-size: 100%;
   }
-  .participation h3 {
+  header {
+    width: 90vw;
+  }
+  header h1 {
+    padding: 40px;
+    right: -30px;
+    top: 530px;
+    font-size: 2rem;
+  }
+  header h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 3rem;
+  }
+  .summary {
+    height: 610px;
+    right: 50px;
     width: 30%;
+    font-size: 1.3rem;
   }
-  .participation::before {
-    width: 55%;
+  .summary p:nth-of-type(1) {
+    margin-top: 110px;
   }
-  .explanation p:nth-of-type(2)::after {
-    display: none;
+  .preamble {
+    margin-top: 525px;
+    width: 50%;
+    margin-left: 0;
   }
-  .benefits {
-    margin-left: 45%;
+  .explanation {
+    width: 50%;
   }
 }
 
