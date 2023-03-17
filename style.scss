@@ -19,7 +19,8 @@ a {
   color: $black;
 }
 
-p, li{
+p,
+li {
   font-size: $p-mobile;
 }
 
@@ -75,18 +76,18 @@ header {
 }
 
 // Background Line
-.preamble::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  z-index: -2;
-  width: 800px;
-  height: 200px;
-  border-top: 20px solid $coral;
-  border-bottom: 20px solid $coral;
-  transform: skew(-55deg, -55deg);
-  overflow: hidden;
-}
+// .preamble::after {
+//   content: '';
+//   position: absolute;
+//   bottom: 0;
+//   z-index: -2;
+//   width: 800px;
+//   height: 200px;
+//   border-top: 20px solid $coral;
+//   border-bottom: 20px solid $coral;
+//   transform: skew(-55deg, -55deg);
+//   overflow: hidden;
+// }
 
 .preamble {
   h3::after {
@@ -320,17 +321,17 @@ header {
 }
 
 // Background Line
-.requirements::before {
-  content: '';
-  position: absolute;
-  left: -150px;
-  z-index: -2;
-  width: 1000px;
-  height: 200px;
-  background: $peach;
-  transform: skew(55deg, 55deg);
-  overflow: hidden;
-}
+// .requirements::before {
+//   content: '';
+//   position: absolute;
+//   left: -150px;
+//   z-index: -2;
+//   width: 1000px;
+//   height: 200px;
+//   background: $peach;
+//   transform: skew(55deg, 55deg);
+//   overflow: hidden;
+// }
 
 footer {
   position: relative;
@@ -378,9 +379,6 @@ MEDIUM MEDIA QUERY
 */
 
 @media only screen and (min-width: 700px) {
-
-
-
   // Preamble - Enlightenment
   .preamble {
     max-width: 97%;
@@ -398,7 +396,7 @@ MEDIUM MEDIA QUERY
     }
 
     p:first-of-type {
-      height: 120px;
+      height: 160px;
     }
 
     p:nth-of-type(2) {
@@ -406,14 +404,14 @@ MEDIUM MEDIA QUERY
     }
 
     p:last-of-type {
-      padding-bottom: 40px;
-      height: 100px;
+      padding-bottom: 70px;
+      height: 120px;
     }
   }
   .participation::before {
     margin-left: 30px;
     width: 70%;
-    height: 500px;
+    height: 600px;
   }
 
   .benefits {
@@ -423,7 +421,7 @@ MEDIUM MEDIA QUERY
     padding: 10px;
     height: 480px;
     width: 480px;
-    margin: 80px 0 40px 190px;
+    margin: 80px 0 40px 30%;
     p {
       padding-top: 40px;
       width: 400px;
@@ -457,8 +455,6 @@ MEDIUM MEDIA QUERY
     p:nth-of-type(1) {
       padding-top: 135px;
     }
-
-
   }
 
   footer {
@@ -560,36 +556,36 @@ MEDIUM MEDIA QUERY
 
   .zen-resources {
     ul::after {
-    right: 50px;
-    bottom: 75px;
-    width: 175px;
-    height: 175px;
-  }
-  li:nth-of-type(5)::after {
-    right: 62px;
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
-    border-bottom: 150px solid $tan;
-  }
+      right: 50px;
+      bottom: 75px;
+      width: 175px;
+      height: 175px;
+    }
+    li:nth-of-type(5)::after {
+      right: 62px;
+      border-left: 75px solid transparent;
+      border-right: 75px solid transparent;
+      border-bottom: 150px solid $tan;
+    }
   }
 
-  p, li{
+  p,
+  li {
     font-size: $p-medium;
   }
-  
+
   h1 {
     font-size: $h1-medium;
   }
-  
+
   h2 {
     font-size: $h2-medium;
   }
-  
+
   h3 {
     font-size: $h3-medium;
   }
 }
-  
 
 /* 
 
@@ -620,7 +616,6 @@ LARGE MEDIA QUERY
   .benefits {
     margin-left: 45%;
   }
-
 
   .sidebar {
     position: absolute;
@@ -682,12 +677,12 @@ LARGE MEDIA QUERY
       padding: 40px;
       right: -30px;
       top: 530px;
-      font-size: 2.0rem;
+      font-size: 2rem;
     }
     h2 {
       text-align: center;
       margin-top: 0;
-      font-size: 3.0rem;
+      font-size: 3rem;
     }
   }
 
@@ -722,21 +717,21 @@ LARGE MEDIA QUERY
       padding-top: 30px;
       margin-bottom: -110px;
     }
-  
+
     p:nth-of-type(1) {
       padding-top: 160px;
     }
-  
+
     p {
       margin-right: 135px;
       margin-left: 55px;
     }
-  
+
     p:nth-of-type(1) {
       padding-top: 135px;
     }
   }
-  
+
   footer {
     position: relative;
     font-size: $h3-large;
@@ -745,7 +740,7 @@ LARGE MEDIA QUERY
     width: 150px;
     margin-top: 0px;
     margin-bottom: -5px;
-    margin-left:700px;
+    margin-left: 700px;
     margin-right: 5px;
     padding-top: 7px;
     padding-bottom: 5px;
@@ -756,4 +751,3 @@ LARGE MEDIA QUERY
     color: black;
   }
 }
-

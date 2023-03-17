@@ -15,7 +15,8 @@ a {
   color: #000000;
 }
 
-p, li {
+p,
+li {
   font-size: 16px;
 }
 
@@ -67,19 +68,6 @@ header h1 {
 
 .preamble {
   margin-top: 450px;
-}
-
-.preamble::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  z-index: -2;
-  width: 800px;
-  height: 200px;
-  border-top: 20px solid #f07167;
-  border-bottom: 20px solid #f07167;
-  transform: skew(-55deg, -55deg);
-  overflow: hidden;
 }
 
 .preamble h3::after {
@@ -298,18 +286,6 @@ header h1 {
   padding-bottom: 50px;
 }
 
-.requirements::before {
-  content: "";
-  position: absolute;
-  left: -150px;
-  z-index: -2;
-  width: 1000px;
-  height: 200px;
-  background: #fed9b7;
-  transform: skew(55deg, 55deg);
-  overflow: hidden;
-}
-
 footer {
   position: relative;
   height: 20px;
@@ -363,19 +339,19 @@ MEDIUM MEDIA QUERY
     height: 30px;
   }
   .participation p:first-of-type {
-    height: 120px;
+    height: 160px;
   }
   .participation p:nth-of-type(2) {
     height: 120px;
   }
   .participation p:last-of-type {
-    padding-bottom: 40px;
-    height: 100px;
+    padding-bottom: 70px;
+    height: 120px;
   }
   .participation::before {
     margin-left: 30px;
     width: 70%;
-    height: 500px;
+    height: 600px;
   }
   .benefits {
     background-color: #fff7eb;
@@ -384,7 +360,7 @@ MEDIUM MEDIA QUERY
     padding: 10px;
     height: 480px;
     width: 480px;
-    margin: 80px 0 40px 190px;
+    margin: 80px 0 40px 30%;
   }
   .benefits p {
     padding-top: 40px;
@@ -513,7 +489,8 @@ MEDIUM MEDIA QUERY
     border-right: 75px solid transparent;
     border-bottom: 150px solid #fff7eb;
   }
-  p, li {
+  p,
+  li {
     font-size: 21px;
   }
   h1 {
