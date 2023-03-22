@@ -352,6 +352,10 @@ footer {
   cursor: pointer;
 }
 
+footer a {
+  text-decoration: none;
+}
+
 // Benefits
 
 .benefits {
@@ -474,10 +478,6 @@ MEDIUM MEDIA QUERY
     z-index: 1;
     text-align: center;
     color: black;
-  }
-
-  footer a {
-    text-decoration: none;
   }
 
   .explanation {
@@ -755,9 +755,5 @@ LARGE MEDIA QUERY
     z-index: 1;
     text-align: center;
     color: black;
-  }
-
-  footer a {
-    text-decoration: none;
   }
 }
