@@ -290,7 +290,7 @@ footer {
   position: relative;
   height: 20px;
   background-color: #fff7eb;
-  width: 150px;
+  width: 200px;
   margin-top: 0px;
   margin-bottom: -5px;
   margin-left: 220px;
@@ -302,6 +302,11 @@ footer {
   z-index: 1;
   text-align: center;
   color: black;
+  cursor: pointer;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 .benefits {
@@ -391,24 +396,9 @@ MEDIUM MEDIA QUERY
     padding-top: 135px;
   }
   footer {
-    position: relative;
-    height: 20px;
-    background-color: #fff7eb;
     width: 250px;
-    margin-top: -10px;
-    margin-bottom: -15px;
-    margin-left: 350px;
-    margin-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    z-index: 1;
-    text-align: center;
-    color: black;
-  }
-  footer a {
-    text-decoration: none;
+    margin: -10px 20px -15px 350px;
+    padding: 20px;
   }
   .explanation h3 {
     font-size: 25px;
@@ -631,26 +621,10 @@ LARGE MEDIA QUERY
     padding-top: 135px;
   }
   footer {
-    text-decoration: none;
-    position: relative;
     font-size: 25px;
-    height: 20px;
-    background-color: #fff7eb;
     width: 320px;
-    margin-top: -20px;
-    margin-bottom: -5px;
-    margin-left: 650px;
-    margin-right: 5px;
-    padding-top: 7px;
-    padding-bottom: 15px;
-    padding-left: 5px;
-    padding-right: 5px;
-    z-index: 1;
-    text-align: center;
-    color: black;
-  }
-  footer a {
-    text-decoration: none;
+    margin: -20px 5px -5px 650px;
+    padding: 7px 5px 15px 5px;
   }
 }
 
