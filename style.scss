@@ -138,13 +138,13 @@ header {
   h3 {
     height: 50px;
     background-color: $dark-blue;
-    width: 200px;
+    width: 250px;
     margin-top: 20px;
     margin-bottom: -10px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10px;
-    padding-bottom: -10px;
+    padding-top: 20px;
+    padding-bottom: -20px;
     padding-left: 20px;
     padding-right: 20px;
     z-index: 2;
@@ -461,18 +461,22 @@ MEDIUM MEDIA QUERY
     position: relative;
     height: 20px;
     background-color: $tan;
-    width: 150px;
-    margin-top: 0px;
-    margin-bottom: -5px;
-    margin-left: 300px;
-    margin-right: 5px;
-    padding-top: 7px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    width: 250px;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    margin-left: 350px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     z-index: 1;
     text-align: center;
     color: black;
+  }
+
+  footer a {
+    text-decoration: none;
   }
 
   .explanation {
@@ -480,7 +484,7 @@ MEDIUM MEDIA QUERY
       font-size: $h3-medium;
       height: 35px;
       background-color: $dark-blue;
-      width: 250px;
+      width: 300px;
       margin-top: 20px;
       margin-bottom: -10px;
       margin-left: auto;
@@ -723,7 +727,7 @@ LARGE MEDIA QUERY
     }
 
     p {
-      margin-right: 135px;
+      margin-right: 300px;
       margin-left: 55px;
     }
 
@@ -733,21 +737,26 @@ LARGE MEDIA QUERY
   }
 
   footer {
+    text-decoration: none;
     position: relative;
     font-size: $h3-large;
     height: 20px;
     background-color: $tan;
-    width: 150px;
-    margin-top: 0px;
+    width: 320px;
+    margin-top: -20px;
     margin-bottom: -5px;
-    margin-left: 700px;
+    margin-left: 650px;
     margin-right: 5px;
     padding-top: 7px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     padding-left: 5px;
     padding-right: 5px;
     z-index: 1;
     text-align: center;
     color: black;
+  }
+
+  footer a {
+    text-decoration: none;
   }
 }
