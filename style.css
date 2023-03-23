@@ -51,6 +51,7 @@ header h1 {
   position: absolute;
   top: 420px;
   right: -80px;
+  font-size: 17px;
 }
 
 .summary {
