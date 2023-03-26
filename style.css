@@ -71,6 +71,19 @@ header h1 {
   margin-top: 450px;
 }
 
+.preamble::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  z-index: -2;
+  width: 800px;
+  height: 200px;
+  border-top: 20px solid #f07167;
+  border-bottom: 20px solid #f07167;
+  transform: skew(-55deg, -55deg);
+  overflow: hidden;
+}
+
 .preamble h3::after {
   content: "";
   position: absolute;
@@ -89,9 +102,7 @@ header h1 {
   width: 120px;
   margin-bottom: -20px;
   margin-left: 30px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 10px;
+  padding: 40px 0 40px 10px;
   z-index: 3;
   text-align: center;
 }
@@ -99,7 +110,6 @@ header h1 {
   position: relative;
   grid-column: 1/4;
   background-color: #00afb9;
-  margin: 0;
   padding: 10px 30px 10px 30px;
   color: #ffffff;
   z-index: -1;
@@ -116,14 +126,8 @@ header h1 {
   height: 50px;
   background-color: #0081a7;
   width: 250px;
-  margin-top: 20px;
-  margin-bottom: -10px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: -20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 20px auto -10px auto;
+  padding: 20px 20px -20px 20px;
   z-index: 2;
   text-align: center;
   color: white;
@@ -213,18 +217,16 @@ header h1 {
 .participation p {
   position: relative;
   background-color: #f07167;
-  margin: -1px;
+  margin: -1px 10px -1px 55px;
   padding: 10px 30px 10px 30px;
   color: #000000;
   z-index: -2;
-  margin-right: 10px;
-  margin-left: 55px;
   width: 60%;
 }
 .participation p:first-of-type {
   padding-top: 110px;
   margin-top: 30px;
-  height: 250px;
+  height: 230px;
 }
 .participation p:nth-of-type(2) {
   height: 150px;
@@ -273,11 +275,9 @@ header h1 {
   position: relative;
   grid-column: 1/4;
   background-color: #00afb9;
-  margin: -5px;
+  margin: -5px 15px -5px 15px;
   padding: 10px 30px 10px 30px;
   color: black;
-  margin-right: 15px;
-  margin-left: 15px;
   z-index: -1;
 }
 .requirements p:nth-of-type(1) {
@@ -287,19 +287,25 @@ header h1 {
   padding-bottom: 50px;
 }
 
+.requirements::before {
+  content: "";
+  position: absolute;
+  left: -150px;
+  z-index: -2;
+  width: 1000px;
+  height: 200px;
+  background: #fed9b7;
+  transform: skew(55deg, 55deg);
+  overflow: hidden;
+}
+
 footer {
   position: relative;
   height: 20px;
   background-color: #fff7eb;
   width: 200px;
-  margin-top: 0px;
-  margin-bottom: -5px;
-  margin-left: 220px;
-  margin-right: 5px;
-  padding-top: 7px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  margin: 0 5px -5px 220px;
+  padding: 7px 5px 5px 5px;
   z-index: 1;
   text-align: center;
   color: black;
@@ -345,24 +351,21 @@ MEDIUM MEDIA QUERY
     height: 30px;
   }
   .participation p:first-of-type {
-    height: 160px;
+    height: 190px;
   }
   .participation p:nth-of-type(2) {
-    height: 120px;
+    height: 140px;
   }
   .participation p:last-of-type {
     padding-bottom: 70px;
-    height: 120px;
+    height: 140px;
   }
   .participation::before {
     margin-left: 30px;
     width: 70%;
-    height: 600px;
+    height: 670px;
   }
   .benefits {
-    background-color: #fff7eb;
-    color: #00afb9;
-    border-radius: 50%;
     padding: 10px;
     height: 480px;
     width: 480px;
@@ -379,11 +382,7 @@ MEDIUM MEDIA QUERY
     padding-top: 40px;
     margin-bottom: 10px;
   }
-  .requirements {
-    position: relative;
-  }
   .requirements h3 {
-    padding-top: 30px;
     margin-bottom: -110px;
   }
   .requirements p:nth-of-type(1) {
@@ -404,43 +403,11 @@ MEDIUM MEDIA QUERY
   .explanation h3 {
     font-size: 25px;
     height: 35px;
-    background-color: #0081a7;
     width: 300px;
-    margin-top: 20px;
-    margin-bottom: -10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    padding-bottom: -10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    z-index: 2;
-    text-align: center;
-    color: white;
-  }
-  .explanation p {
-    position: relative;
-    grid-column: 1/4;
-    background-color: #fff7eb;
-    margin: 0;
-    padding: 30px 10px 10px 30px;
-    color: black;
-    margin-right: 15px;
-    margin-left: 15px;
-    z-index: -1;
+    padding: 10px 20px -10px 20px;
   }
   .explanation p:nth-of-type(2)::after {
-    content: "";
-    position: absolute;
     left: 25px;
-    bottom: -65px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: #00afb9;
-  }
-  .explanation p:nth-of-type(2) {
-    padding-bottom: 45px;
   }
   .intro {
     background-size: 120%;
