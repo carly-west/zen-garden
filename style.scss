@@ -5,14 +5,19 @@
 
 body {
   font-family: 'Inter', Helvetica, sans-serif;
+  margin: 0;
+}
+
+.page-wrapper {
+  overflow: hidden;
 }
 
 .intro {
   position: relative;
   background-image: (url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2946&q=80));
   background-repeat: no-repeat;
-  background-position: 55% 0%;
-  background-size: 150%;
+  background-position: 60% 0%;
+  background-size: 135%;
 }
 
 a {
@@ -38,13 +43,18 @@ h3 {
 
 header {
   position: relative;
-  width: 80%;
+  width: 90%;
   z-index: 1;
 
   h2 {
+    width: 85%;
+    position: relative;
+    top: 50px;
     background: $blue-green;
     color: $black;
     padding: 20px;
+    font-size: 24px;
+    text-align: center;
   }
   h1 {
     background: $peach;
@@ -53,41 +63,42 @@ header {
     text-align: center;
     width: min-content;
     position: absolute;
-    top: 420px;
-    right: -80px;
+    top: 392px;
+    right: -60px;
     font-size: 17px;
   }
 }
 
 .summary {
   background: $coral;
-  width: 40%;
-  height: 440px;
-  padding: 15px;
+  width: 30%;
+  height: 24.5em;
+  padding: .9375em;
   position: absolute;
-  right: 15px;
-  top: 0px;
+  right: .9375em;
+  top: 0;
+  hyphens: auto;
   p:nth-of-type(1) {
-    margin-top: 130px;
+    margin-top: 7.1875em;
   }
 }
 
 .preamble {
-  margin-top: 450px;
+  margin-top: 21.875em;
+  margin-bottom: 3.75em;
 }
 
 // Background Line
-.preamble::after {
+.intro::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -250px;
+  left: -200px;
   z-index: -2;
-  width: 800px;
-  height: 200px;
-  border-top: 20px solid $coral;
-  border-bottom: 20px solid $coral;
-  transform: skew(-55deg, -55deg);
-  overflow: hidden;
+  width: 200vw;
+  height: 100px;
+  outline: 10px solid $coral;
+  transform: rotate(-45deg);
 }
 
 .preamble {
@@ -176,12 +187,11 @@ header {
 .design-archives,
 .zen-resources {
   background: $peach;
-  padding: 10px 25px;
-  width: 80%;
-  margin-left: 3vw;
+  padding: .625em 1.5625em;
+  margin: 0 .9375em 0 .9375em;
   ul {
-    padding-left: 20px;
-    margin-top: -15px;
+    padding-left: 1.25em;
+    margin-top: -.9375em;
   }
   a {
     text-decoration: none;
@@ -312,13 +322,12 @@ header {
 .requirements::before {
   content: '';
   position: absolute;
-  left: -150px;
+  left: -145px;
   z-index: -2;
-  width: 1000px;
-  height: 200px;
+  width: 175vw;
+  height: 100px;
   background: $peach;
-  transform: skew(55deg, 55deg);
-  overflow: hidden;
+  transform: rotate(45deg);
 }
 
 footer {
@@ -361,7 +370,7 @@ footer a {
 
 /* 
 
-MEDIUM MEDIA QUERY
+-------------MEDIUM MEDIA QUERY-------------
 
 */
 
@@ -371,6 +380,7 @@ MEDIUM MEDIA QUERY
     max-width: 97%;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 34.375em;
   }
 
   // Participation
@@ -420,6 +430,12 @@ MEDIUM MEDIA QUERY
     }
   }
 
+  //Background Line - Solid Tan
+  .requirements::before {
+    left: -295px;
+  }
+
+
   .requirements {
     h3 {
       margin-bottom: -110px;
@@ -460,34 +476,39 @@ MEDIUM MEDIA QUERY
 
   .intro {
     background-size: 120%;
-    max-width: 100%;
   }
 
   header {
-    width: 85vw;
-    margin: 0 auto;
     h1 {
       padding: 40px;
-      right: -30px;
-      top: 400px;
-      font-size: 1.7rem;
+      right: -85px;
+      top: 565px;
+      font-size: 1.5em;
     }
     h2 {
-      position: relative;
-      padding-left: 50px;
-      margin-top: 40px;
-      font-size: 2.4rem;
+      width: 90%;
+      top: 70px;
+      font-size: 2.5rem;
     }
   }
 
+  //Background Line - Coral
+  .intro::after {
+    left: -350px;
+  }
+
   .summary {
-    height: 480px;
-    right: 50px;
-    width: 30%;
-    font-size: 1.3rem;
+    width: 23%;
+    height: 585px;
     p:nth-of-type(1) {
-      margin-top: 90px;
+      margin-top: 7.75em;
     }
+  }
+
+  .design-selection,
+.design-archives,
+.zen-resources  {
+    width: 88%;
   }
 
   .zen-resources {
@@ -525,14 +546,14 @@ MEDIUM MEDIA QUERY
 
 /* 
 
-LARGE MEDIA QUERY
+--------------LARGE MEDIA QUERY-------------
 
 */
 @media only screen and (min-width: 1000px) {
-  // Participation
+   // Participation
   .participation {
     margin-left: 200px;
-    margin-top: 100px;
+    margin-top: -125px;
 
     h3 {
       width: 30%;
@@ -553,45 +574,60 @@ LARGE MEDIA QUERY
     margin-left: 45%;
   }
 
+
+  //Select a Design
   .sidebar {
     position: absolute;
-    top: 1000px;
-    right: 40px;
+    top: 1325px;
+    right: 20px;
     width: 35%;
     margin: 0 auto;
     .design-selection::before {
       content: '';
       position: absolute;
-      right: 90px;
-      top: -180px;
-      width: 125px;
-      height: 125px;
+      right: 100px;
+      top: -200px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       background: $dark-blue;
     }
     .design-selection li:nth-of-type(1)::before {
       content: '';
       position: absolute;
-      right: 100px;
-      top: -120px;
+      right: 105px;
+      top: -130px;
       z-index: 1;
       width: 0;
       height: 0;
-      border-left: 55px solid transparent;
-      border-right: 55px solid transparent;
-      border-bottom: 90px solid $tan;
+      border-left: 65px solid transparent;
+      border-right: 65px solid transparent;
+      border-bottom: 100px solid $tan;
     }
   }
 
   .design-selection,
   .design-archives,
   .zen-resources {
-    font-size: 1rem;
-
+    width: 75%;
     h3 {
-      margin-top: 15px;
+      font-size: 18px;
     }
-  }
+    li {
+      font-size: 16px;
+      line-height: 1.3em;
+    }
+    }
+
+    .design-selection {
+      padding-top: 10px;
+      padding-bottom: 0;
+    }
+
+    .design-archives {
+      padding-bottom: 0;
+    }
+  
 
   .zen-resources {
     padding-bottom: 15px;
@@ -609,37 +645,59 @@ LARGE MEDIA QUERY
 
   header {
     width: 90vw;
+    margin: 0 auto;
     h1 {
-      padding: 40px;
+      padding: 50px;
       right: -30px;
       top: 530px;
-      font-size: 2rem;
+      font-size: 2em;
     }
     h2 {
       text-align: center;
       margin-top: 0;
-      font-size: 3rem;
+      font-size: 3em;
     }
   }
 
   .summary {
-    height: 610px;
+    height: 620px;
     right: 50px;
-    width: 30%;
-    font-size: 1.3rem;
     p:nth-of-type(1) {
-      margin-top: 110px;
+      margin-top: 200px;
     }
   }
 
   .preamble {
-    margin-top: 525px;
-    width: 50%;
+    width: 80%;
     margin-left: 0;
+  p:nth-of-type(1) {
+    padding: 75px 50px 20px 50px;
+  }  
+  p:nth-of-type(2) {
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+  }
+  p:nth-of-type(3) {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
   }
 
   .explanation {
-    width: 50%;
+    width: 45%;
+    margin-left: 60px;
+    margin-top: 100px;
+    p {
+      padding: 20px 45px;
+      text-align: center;
+    }
+    p:nth-of-type(1) {
+      padding-top: 50px;
+    }
+    p:nth-of-type(2) {
+      padding-bottom: 50px;
+    }
   }
 
   // Benefits
@@ -674,4 +732,5 @@ LARGE MEDIA QUERY
     margin: -20px 5px -5px 650px;
     padding: 7px 5px 15px 5px;
   }
+
 }
