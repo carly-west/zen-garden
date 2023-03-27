@@ -149,7 +149,7 @@ header {
     background-color: $dark-blue;
     width: 250px;
     margin: 20px auto -10px auto;
-    padding: 20px 20px -20px 20px;
+    padding: 20px 15px 0px 15px;
     z-index: 2;
     text-align: center;
     color: white;
@@ -335,7 +335,7 @@ footer {
   height: 20px;
   background-color: $tan;
   width: 200px;
-  margin: 0 5px -5px 220px;
+  margin: 0 5px -5px 175px;
   padding: 7px 5px 5px 5px;
   z-index: 1;
   text-align: center;
@@ -466,7 +466,7 @@ footer a {
       font-size: $h3-medium;
       height: 35px;
       width: 300px;
-      padding: 10px 20px -10px 20px;
+      padding: 10px 20px 10px 20px;
     }
 
     p:nth-of-type(2)::after {
@@ -729,7 +729,7 @@ footer a {
   footer {
     font-size: $h3-large;
     width: 320px;
-    margin: -20px 5px -5px 650px;
+    margin: -20px 5px 20px 650px;
     padding: 7px 5px 15px 5px;
   }
 
