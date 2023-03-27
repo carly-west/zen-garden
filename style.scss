@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Inter', Helvetica, sans-serif;
-  margin: 0;
+  margin-bottom: 30px;
 }
 
 .page-wrapper {
@@ -73,9 +73,9 @@ header {
   background: $coral;
   width: 30%;
   height: 24.5em;
-  padding: .9375em;
+  padding: 0.9375em;
   position: absolute;
-  right: .9375em;
+  right: 0.9375em;
   top: 0;
   hyphens: auto;
   p:nth-of-type(1) {
@@ -187,11 +187,11 @@ header {
 .design-archives,
 .zen-resources {
   background: $peach;
-  padding: .625em 1.5625em;
-  margin: 0 .9375em 0 .9375em;
+  padding: 0.625em 1.5625em;
+  margin: 0 0.9375em 0 0.9375em;
   ul {
     padding-left: 1.25em;
-    margin-top: -.9375em;
+    margin-top: -0.9375em;
   }
   a {
     text-decoration: none;
@@ -356,7 +356,7 @@ footer a {
   padding: 40px;
   height: 280px;
   width: 280px;
-  margin: 90px 0 40px 90px;
+  margin: 90px 0 40px 30px;
   line-height: 20px;
 
   p {
@@ -415,7 +415,7 @@ footer a {
     padding: 10px;
     height: 480px;
     width: 480px;
-    margin: 80px 0 40px 30%;
+    margin: 80px 0 40px 28%;
     p {
       padding-top: 40px;
       width: 400px;
@@ -434,7 +434,6 @@ footer a {
   .requirements::before {
     left: -295px;
   }
-
 
   .requirements {
     h3 {
@@ -506,8 +505,8 @@ footer a {
   }
 
   .design-selection,
-.design-archives,
-.zen-resources  {
+  .design-archives,
+  .zen-resources {
     width: 88%;
   }
 
@@ -550,7 +549,7 @@ footer a {
 
 */
 @media only screen and (min-width: 1000px) {
-   // Participation
+  // Participation
   .participation {
     margin-left: 200px;
     margin-top: -125px;
@@ -573,7 +572,6 @@ footer a {
   .benefits {
     margin-left: 45%;
   }
-
 
   //Select a Design
   .sidebar {
@@ -617,17 +615,16 @@ footer a {
       font-size: 16px;
       line-height: 1.3em;
     }
-    }
+  }
 
-    .design-selection {
-      padding-top: 10px;
-      padding-bottom: 0;
-    }
+  .design-selection {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
 
-    .design-archives {
-      padding-bottom: 0;
-    }
-  
+  .design-archives {
+    padding-bottom: 0;
+  }
 
   .zen-resources {
     padding-bottom: 15px;
@@ -670,18 +667,18 @@ footer a {
   .preamble {
     width: 80%;
     margin-left: 0;
-  p:nth-of-type(1) {
-    padding: 75px 50px 20px 50px;
-  }  
-  p:nth-of-type(2) {
-    padding-right: 50px;
-    padding-bottom: 25px;
-    padding-left: 50px;
-  }
-  p:nth-of-type(3) {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
+    p:nth-of-type(1) {
+      padding: 75px 50px 20px 50px;
+    }
+    p:nth-of-type(2) {
+      padding-right: 50px;
+      padding-bottom: 25px;
+      padding-left: 50px;
+    }
+    p:nth-of-type(3) {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
   }
 
   .explanation {
@@ -732,5 +729,4 @@ footer a {
     margin: -20px 5px -5px 650px;
     padding: 7px 5px 15px 5px;
   }
-
 }
