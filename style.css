@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 body {
   font-family: "Inter", Helvetica, sans-serif;
-  margin: 0;
+  margin: 0 0 30px 0;
 }
 
 .page-wrapper {
@@ -99,7 +99,7 @@ header h1 {
   content: "";
   position: absolute;
   z-index: -1;
-  left: 140px;
+  left: 130px;
   margin-top: -80px;
   width: 0;
   height: 0;
@@ -332,7 +332,7 @@ footer a {
   padding: 40px;
   height: 280px;
   width: 280px;
-  margin: 90px 0 40px 90px;
+  margin: 90px 0 40px 30px;
   line-height: 20px;
 }
 .benefits p {
@@ -353,6 +353,13 @@ footer a {
     margin-right: auto;
     margin-left: auto;
     margin-top: 34.375em;
+  }
+  .preamble h3 {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+  .preamble h3::after {
+    margin-top: -110px;
   }
   .participation p {
     width: 75%;
